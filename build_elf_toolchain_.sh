@@ -51,7 +51,7 @@ ${GCC_SRC}/configure \
   --enable-Os-default-ex9=yes --enable-gp-insn-relax-default=yes \
   --enable-error-on-no-atomic=yes --disable-tls \
   --enable-multilib=yes --with-multilib-list=dsp \
-  --with-newlib --with-abi=${ABI} --disable-werror \
+  --with-newlib --with-system-zlib --with-abi=${ABI} --disable-werror \
   --disable-shared --enable-threads=single \
   --enable-checking=release \
   CFLAGS_FOR_TARGET="-O2 -g -mno-error-on-no-atomic -mstrict-align -mfp16" \
@@ -81,7 +81,7 @@ ${GCC_SRC}/configure \
   --enable-Os-default-ex9=yes --enable-gp-insn-relax-default=yes \
   --enable-error-on-no-atomic=yes --disable-tls \
   --enable-multilib=yes --with-multilib-list=dsp \
-  --with-newlib --disable-shared --enable-threads=single \
+  --with-newlib --with-system-zlib --disable-shared --enable-threads=single \
   --disable-werror --with-headers=${PREFIX}/${TARGET}/include \
   --enable-checking=release \
   CFLAGS_FOR_TARGET="-O2 -g  -mno-error-on-no-atomic -mstrict-align" \
